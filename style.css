@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+}
+
+.menu {
+    background-color: rgb(23, 64, 95);
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.box {
+    color: white;
+    font-weight: 800;
+    font-size: 2rem;
+    margin: 0 2rem;
+    display: flex;
+    align-content: center;
+
+}
+
+.convertor {
+    margin: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+
+    margin: 1rem auto;
+
+}
+
+.inputFirst {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+
+
+}
+
+.inputSecond {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid black;
+
+}
+
+.inputFirstText {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 0.5rem;
+}
+
+.selectMenu1,
+.selectMenu2 {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border: 2px solid black;
+
+}
+
+.rate {
+
+    width: 40%;
+    height: 100px;
+
+}
+
+
+.calculate img {
+    width: 50px;
+
+    cursor: pointer;
+}
+
+.calculate {
+    display: flex;
+    align-items: center;
+}
+
+.carousel {
+
+    width: 60%;
+    margin: 1rem auto;
+}
+
+
+p {
+    font-size: 0.7rem;
+    color: rgb(32, 14, 7);
+}
+
+.inputSecond {
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.logo img {
+    width: 90px;
+
+}
+
+.clear {
+    cursor: pointer;
+}
+
+@media screen and (max-width:500px) {
+    .menu {
+        display: none;
+    }
+
+    .box {
+        font-size: 0.4rem;
+    }
+
+    .logo h5 {
+        display: none;
+    }
+
+    .rate {
+        /* width: 2%; */
+    }
+
+    .buttons img {
+        width: 20px;
+    }
+
+    .clear h5 {
+        font-size: 0.5rem;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+
+}
+
+@media screen and (min-width:500px) and (max-width:1200px) {
+    .menu {
+
+        height: 60px;
+        width: auto;
+        justify-content: center;
+    }
+
+    .box {
+        font-size: 1rem;
+        width: 25%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .logo img {
+        width: 50px;
+    }
+
+    .logo {
+        width: 300px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+}
