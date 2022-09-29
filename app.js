@@ -1,8 +1,7 @@
 const getNews = () => {
-  const urlNews =
-    "https://newsapi.org/v2/top-headlines?country=tr&category=business&apiKey=a43885209183415b94694317a7db3d8f";
-
-  fetch(urlNews)
+  fetch(
+    "https://newsapi.org/v2/top-headlines?country=tr&category=business&apiKey=a43885209183415b94694317a7db3d8f"
+  )
     .then((res) => {
       return res.json();
     })
@@ -16,6 +15,13 @@ getNews();
 const newsApp = (news) => {
   const newsBox = document.querySelector(".news");
   const { articles } = news;
+  const news1Image = articles[4].urlToImage;
+  const news1Title = articles[4].title;
+  const news2Image = articles[2].urlToImage;
+  const news2Title = articles[2].title;
+  const news3Image = articles[8].urlToImage;
+  const news3Title = articles[8].title;
+
   newsBox.innerHTML += `
   
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
@@ -26,23 +32,23 @@ const newsApp = (news) => {
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="${articles[0].urlToImage}" class="d-block w-100" alt="...">
+      <img src="${news1Image}" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>${articles[0].title}</h5>
+        <h5>${news1Title}</h5>
         
       </div>
     </div>
     <div class="carousel-item">
-      <img src="${articles[2].urlToImage}" class="d-block w-100" alt="...">
+      <img src="${news2Image}" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>${articles[2].title}</h5>
+        <h5>${news2Title}</h5>
         
       </div>
     </div>
     <div class="carousel-item">
-      <img src="${articles[13].urlToImage}" class="d-block w-100" alt="...">
+      <img src="${news3Image}" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>${articles[13].title}</h5>
+        <h5>${news3Title}</h5>
         
       </div>
     </div>
