@@ -15,13 +15,6 @@ getNews();
 const newsApp = (news) => {
   const newsBox = document.querySelector(".news");
   const { articles } = news;
-  const news1Image = articles[4].urlToImage;
-  const news1Title = articles[4].title;
-  const news2Image = articles[2].urlToImage;
-  const news2Title = articles[2].title;
-  const news3Image = articles[8].urlToImage;
-  const news3Title = articles[8].title;
-
   newsBox.innerHTML += `
   
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
@@ -32,23 +25,31 @@ const newsApp = (news) => {
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="${news1Image}" class="d-block w-100" alt="...">
+      <img src="./news/news1.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>${news1Title}</h5>
+      <a
+                href="https://www.memurlar.net/haber/1042319/uzmanindan-altin-aciklamasi-simdi-alan-kazancli-cikar.html" target="_blank" style="text-decoration: none">
+                <h5>Uzmanından 'altın' açıklaması: Şimdi alan kazançlı çıkar - Memurlar</h5></a>
+        
         
       </div>
     </div>
     <div class="carousel-item">
-      <img src="${news2Image}" class="d-block w-100" alt="...">
+      <img src="./news/nws2.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>${news2Title}</h5>
+      <a
+      href="https://www.haber24.com/emekliye-arka-arkaya-mujdeli-haberler-gelmeye-devam-ediyor-destek-limitleri-yukseldi-10-gun-sure-verildi" target="_blank" style="text-decoration: none">
+      <h5>Emekliye Arka Arkaya Müjdeli Haberler Gelmeye Devam Ediyor! Destek Limitleri Yükseldi! 10 Gün Süre Verildi</h5></a>
+
+        
         
       </div>
     </div>
     <div class="carousel-item">
-      <img src="${news3Image}" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>${news3Title}</h5>
+      <img src="./news/news3.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block"> <a
+      href="https://www.bloomberght.com/atlanta-fed-baskani-bostic-jeopolitik-belirsizliklere-dikkat-cekti-2316088" target="_blank" style="text-decoration: none">
+      <h5>Atlanta Fed Başkanı Bostic “jeopolitik belirsizliklere” dikkat çekti - BLOOMBERG HT - BloombergHT</h5></a>
         
       </div>
     </div>
